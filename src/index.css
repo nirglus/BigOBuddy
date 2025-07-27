@@ -7,23 +7,3 @@
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 }
-
-@layer components {
-  .code-input {
-    @apply w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none;
-    font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
-    min-height: 200px;
-  }
-  
-  .analyze-btn {
-    @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl;
-  }
-  
-  .result-card {
-    @apply bg-white border border-gray-200 rounded-lg shadow-lg p-6 mt-6;
-  }
-  
-  .complexity-badge {
-    @apply inline-block bg-gradient-to-r from-purple-500 to-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold;
-  }
-}
