@@ -16,6 +16,24 @@ const AnalysisResults = ({ result }) => {
           <p className="text-slate-700 leading-relaxed">{result.explanation}</p>
         </div>
         
+        {result.loopSummary && result.loopSummary.length > 0 && (
+          <div className="bg-green-50 rounded-xl p-6">
+            <h3 className="text-lg font-semibold text-slate-900 mb-3">📊 Loop Breakdown</h3>
+            <div className="space-y-2">
+              {result.loopSummary.map((summary, index) => (
+                <div key={index} className="text-sm text-slate-700 font-mono bg-white px-3 py-2 rounded border">
+                  {summary}
+                </div>
+              ))}
+            </div>
+            {result.loopSummary.length > 1 && (
+              <div className="mt-3 text-sm text-slate-600">
+                <strong>Total complexity:</strong> {result.complexity}
+              </div>
+            )}
+          </div>
+        )}
+        
         <div className="bg-blue-50 rounded-xl p-6">
           <h3 className="text-lg font-semibold text-slate-900 mb-3">💡 Optimization Suggestion</h3>
           <p className="text-slate-700 leading-relaxed">{result.optimization}</p>
