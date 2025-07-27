@@ -2,6 +2,9 @@
 
 An interactive web application that helps developers understand the time complexity (Big O notation) of their JavaScript code. Simply paste your code, click "Analyze", and get a detailed explanation of the algorithm's efficiency.
 
+<img width="1916" height="818" alt="צילום מסך 2025-07-27 211340" src="https://github.com/user-attachments/assets/a3090f79-6210-4a23-aca4-d7a15e9ea0a3" />
+<img width="1919" height="812" alt="צילום מסך 2025-07-27 211402" src="https://github.com/user-attachments/assets/0a5b7e65-0564-4279-8c8f-95a8149393b3" />
+
 ## Features
 
 - **Code Analysis**: Paste JavaScript code and get instant time complexity analysis
